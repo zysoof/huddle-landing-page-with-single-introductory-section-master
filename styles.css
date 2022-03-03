@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@500&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@400;600&display=swap');
+body{
+    background: url(/images/bg-mobile.svg);
+        background-size: cover;
+        background-color:hsl(257, 40%, 49%) ;
+        background-position: 50% 80%;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    width: 120px;
+    height: 30px;
+    padding: 30px 20px;
+    padding-bottom: 0;
+}
+.hero{
+    padding: 60px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero img{
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.hero-box{
+    text-align: center;
+}
+.hero-box h2{
+    font-size: 24px;
+}
+.hero-box p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hero-box button{
+    padding: 15px 90px;
+    border-radius: 30px;
+    border: 0;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    cursor: pointer;
+}
+.hero-box button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid white;
+    fill: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.icon:hover {
+    fill: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);;
+}
+@media screen and (min-width: 1024px) {
+    body{
+        background: url(/images/bg-desktop.svg);
+        background-size: cover;
+        background-color:hsl(257, 40%, 49%) ;
+    }
+    .hero{
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+    .hero img{
+        max-width: 1000px;
+        width: 60%;
+    }
+    .hero-box{
+        max-width: auto;
+        padding: 0;
+        text-align: justify;
+        margin: 0 40px;
+        font-size: 24px;
+    }
+    .hero-box h2{
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    .hero-box p{
+        max-width: 50ch;
+    }
+    .hero-box button{
+        padding: 20px 60px;
+    }
+    .logo{
+        width: 250px;
+        height: 70px;
+        margin-left: 10px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        margin-bottom: 20px;
+    }
+    .background{
+        background: url(/images/bg-desktop.svg);
+        background-repeat: repeat-y;
+        background-size: auto;
+    }
+ 
+}
